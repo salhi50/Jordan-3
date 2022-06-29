@@ -1,0 +1,883 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/wspace.css">
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <title>Jordan-3</title>
+</head>
+<body class="flex align-center justify-center fd-col full-height-screen">
+  <!-- content choose -->
+  <div class="container">
+    <div class="title pdy-30">
+      <h2 class="text-center">Jordan Popups</h2>
+      <p class="text-center grey-text mgt-4">choose one between these popups, all the popups are working.</p>
+    </div>
+    <div class="grid-view">
+      <div class="grid gr-view">
+        <div class="box cursor pd-15 text-center" id="share">
+          <ion-icon name="arrow-redo" class="icon"></ion-icon>
+          <p class="name">Share</p>
+        </div>
+        <div class="box cursor pd-15 text-center" id="connect">
+          <ion-icon name="swap-horizontal" class="icon"></ion-icon>
+          <p class="name">Connect</p>
+        </div>
+        <div class="box cursor pd-15 text-center" id="integ">
+          <ion-icon name="layers" class="icon"></ion-icon>
+          <p class="name">Integrations</p>
+        </div>
+        <div class="box cursor pd-15 text-center" id="login">
+          <ion-icon name="person-add" class="icon"></ion-icon>
+          <p class="name">Login</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- login popup -->
+  <div id="log-pop" class="log-pop">
+    <div class="parent-modal d-none" id="log-modal">
+      <div class="main-modal pd-20">
+        <!-- up modal -->
+        <div class="up flex align-center flex-between mgb-half-1rem">
+          <!-- star img -->
+          <div class="star">
+            <img src="imgs/star.png" alt="">
+          </div>
+          <!-- langauges -->
+          <div class="langs">
+            <img src="imgs/eng.png" class="mgr-6" alt="">
+            <img src="imgs/fr.png" alt="">
+          </div>
+        </div>
+        <div class="main-form">
+          <div class="form-title mgb-1rem"><h4>Log in</h4></div>
+          <!-- email input -->
+          <div class="email mgb-half-1rem">
+            <label for="" class="p-xsmall fw-600">Email Adress</label>
+            <div class="input relative">
+              <input type="text" name="" class="full-width rounded" id="">
+              <ion-icon name="checkmark-circle" class="absolute abs-icon" id="abs-icon"></ion-icon>
+            </div>
+          </div>
+          <!-- passwor input -->
+          <div class="pass">
+            <label for="" class="p-xsmall fw-600">Password</label>
+            <div class="input">
+              <input type="password" name="" class="full-width rounded" id="">
+            </div>
+          </div>
+          <!-- remember me + forget password -->
+          <div class="rem-forget flex align-center flex-between mgy-1rem">
+            <div class="rem flex align-center">
+              <input type="checkbox" name="" id="" class="checkbox">
+              <span class="p-xsmall mgl-6 fw-500" style="margin-top: 3px;">Remember me</span>
+            </div>
+            <div class="forget cursor">
+              <span class="p-xsmall fw-500">Forgot password?</span>
+            </div>
+          </div>
+          <!-- btn login -->
+          <div class="log-btn">
+            <button class="btn full-width w-color black-bg" id="log-btn">Log in</button>
+          </div>
+          <!-- message -->
+          <div class="text-ms mgt-1rem text-center p-small">
+            <p class="click fw-500">Click Log in to <span class="msg">close modal?</span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- integrations modal -->
+  <div class="integ-pop">
+    <div class="parent-modal d-none" id="integ-pop">
+      <div class="main-modal">
+        <!-- up modal -->
+        <div class="up pd-15">
+          <div class="title">
+            <h5 class="tit-integ">Add integrations</h5>
+            <p class="mgt-4 grey p-small">supercharge your workflow and connect the tools you use every day.</p>
+          </div>
+          <div class="sch-cust flex align-center mgt-1rem">
+            <!-- search input -->
+            <div class="search-bar relative mgr-half-1rem fl-1">
+              <ion-icon name="search-outline" class="sch-icon absolute"></ion-icon>
+              <input type="search" class="full-width" placeholder="Search" name="" id="">
+            </div>
+            <!-- custom integration -->
+            <div class="cust">
+              <button class="btn bg-none p-small">
+               <span class="mgr-6" style="font-size: 17px;">+</span><span>Custom</span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- main tools -->
+        <div class="tools grid pdx-15 pdt-5 pdb-20">
+          <!-- box -->
+          <div class="box-tool pd-10">
+            <!-- up box -->
+            <div class="lab-img flex align-center flex-between">
+              <div class="fst-part flex align-center">
+                <img src="imgs/slack.png" style="width: 35px;height: 35px;" alt="">
+              <h6 class="mgl-1rem">Linear</h6>
+              </div>
+              <div class="scd-part">
+                <label for="check" class="switch-label">
+                  <input type="checkbox" name="" class="switch-check-box" id="check">
+                  <div class="correct-switch"></div>
+                </label>
+              </div>
+            </div>
+            <!-- info box -->
+            <div class="text mgt-half-1rem">
+              <p class="p-xxsmall grey">Streamline software projects,and bug tracking with Linear.</p>
+            </div>
+          </div>
+          <div class="box-tool pd-10">
+            <!-- up box -->
+            <div class="lab-img flex align-center flex-between">
+              <div class="fst-part flex align-center">
+                <img src="imgs/notion.png" style="width: 35px;height: 35px;" alt="">
+              <h6 class="mgl-1rem">Notion</h6>
+              </div>
+              <div class="scd-part">
+                <label for="one" class="switch-label">
+                  <input type="checkbox" name="" class="switch-check-box" id="one">
+                  <div class="correct-switch"></div>
+                </label>
+              </div>
+            </div>
+            <!-- info box -->
+            <div class="text mgt-half-1rem">
+              <p class="p-xxsmall grey">Boost your team's productivity with async video collaboration.</p>
+            </div>
+          </div>
+          <div class="box-tool pd-10">
+            <!-- up box -->
+            <div class="lab-img flex align-center flex-between">
+              <div class="fst-part flex align-center">
+                <img src="imgs/chimp.png" style="width: 35px;height: 35px;" alt="">
+              <h6 class="mgl-1rem">Mailchimp</h6>
+              </div>
+              <div class="scd-part">
+                <label for="two" class="switch-label">
+                  <input type="checkbox" name="" class="switch-check-box" id="two">
+                  <div class="correct-switch"></div>
+                </label>
+              </div>
+            </div>
+            <!-- info box -->
+            <div class="text mgt-half-1rem">
+              <p class="p-xxsmall grey">grow your business an all-in-One marketing automation platform.</p>
+            </div>
+          </div>
+          <div class="box-tool pd-10">
+            <!-- up box -->
+            <div class="lab-img flex align-center flex-between">
+              <div class="fst-part flex align-center">
+                <img src="imgs/github.png" style="width: 35px;height: 35px;" alt="">
+              <h6 class="mgl-1rem">Github</h6>
+              </div>
+              <div class="scd-part">
+                <label for="three" class="switch-label">
+                  <input type="checkbox" name="" class="switch-check-box" id="three">
+                  <div class="correct-switch"></div>
+                </label>
+              </div>
+            </div>
+            <!-- info box -->
+            <div class="text mgt-half-1rem">
+              <p class="p-xxsmall grey">Integrate your knowledge base and customer success.</p>
+            </div>
+          </div>
+          <div class="box-tool pd-10">
+            <!-- up box -->
+            <div class="lab-img flex align-center flex-between">
+              <div class="fst-part flex align-center">
+                <img src="imgs/dropbox.png" style="width: 35px;height: 35px;" alt="">
+              <h6 class="mgl-1rem">Dropbox</h6>
+              </div>
+              <div class="scd-part">
+                <label for="four" class="switch-label">
+                  <input type="checkbox" name="" class="switch-check-box" id="four">
+                  <div class="correct-switch"></div>
+                </label>
+              </div>
+            </div>
+            <!-- info box -->
+            <div class="text mgt-half-1rem">
+              <p class="p-xxsmall grey">Seamlessly connect your team's cloud files and storage.</p>
+            </div>
+          </div>
+          <div class="box-tool pd-10">
+            <!-- up box -->
+            <div class="lab-img flex align-center flex-between">
+              <div class="fst-part flex align-center">
+                <img src="imgs/zapier.png" style="width: 35px;height: 35px;" alt="">
+              <h6 class="mgl-1rem">Zapier</h6>
+              </div>
+              <div class="scd-part">
+                <label for="five" class="switch-label">
+                  <input type="checkbox" name="" class="switch-check-box" id="five">
+                  <div class="correct-switch"></div>
+                </label>
+              </div>
+            </div>
+            <!-- info box -->
+            <div class="text mgt-half-1rem">
+              <p class="p-xxsmall grey">Build custom aumatics and integrations with other apps.</p>
+            </div>
+          </div>
+          <div class="box-tool pd-10">
+            <!-- up box -->
+            <div class="lab-img flex align-center flex-between">
+              <div class="fst-part flex align-center">
+                <img src="imgs/drive.png" style="width: 35px;height: 35px;" alt="">
+              <h6 class="mgl-1rem">Drive</h6>
+              </div>
+              <div class="scd-part">
+                <label for="six" class="switch-label">
+                  <input type="checkbox" name="" class="switch-check-box" id="six">
+                  <div class="correct-switch"></div>
+                </label>
+              </div>
+            </div>
+            <!-- info box -->
+            <div class="text mgt-half-1rem">
+              <p class="p-xxsmall grey">Add powerful search capabilities that offer speed and reliability.</p>
+            </div>
+          </div>
+          <div class="box-tool pd-10">
+            <!-- up box -->
+            <div class="lab-img flex align-center flex-between">
+              <div class="fst-part flex align-center">
+                <img src="imgs/figma.png" style="width: 35px;height: 35px;" alt="">
+              <h6 class="mgl-1rem">Figma</h6>
+              </div>
+              <div class="scd-part">
+                <label for="seven" class="switch-label">
+                  <input type="checkbox" name="" class="switch-check-box" id="seven">
+                  <div class="correct-switch"></div>
+                </label>
+              </div>
+            </div>
+            <!-- info box -->
+            <div class="text mgt-half-1rem">
+              <p class="p-xxsmall grey">embed notion pages and notes in projects.</p>
+            </div>
+          </div>
+        </div>
+        <div class="down-btns white-bg pd-10 flex align-center">
+          <div class="skip mgr-half-1rem fl-1" id="skip">
+            <button class="btn full-width bg-none p-small">Skip for now</button>
+          </div>
+          <div class="save fl-1" id="save">
+            <button class="btn black-bg full-width rounded w-color p-small">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- connect popup -->
+  <div class="con-pop">
+    <div class="parent-modal d-none" id="con-modal">
+      <div class="main-modal">
+        <!-- images with connect icon -->
+        <div class="up pdy-15 flex justify-center align-center">
+          <div class="git">
+            <img src="imgs/github.png" alt="">
+          </div>
+          <div class="icon-connect pdx-15">
+            <ion-icon name="swap-horizontal"></ion-icon>
+          </div>
+          <div class="drive">
+            <img src="imgs/drive.png" alt="">
+          </div>
+        </div>
+        <!-- info + copy link -->
+        <div class="info-copy text-center">
+          <div class="info pdx-20">
+            <h5 class="tit-con fw-500">Connect Github to Drive</h5>
+            <p class="info-p mgt-6 grey p-small fw-400">Prioritize work based on customer needs and build a tighter feedback loop with your customers</p>
+          </div>
+          <div class="copy pdy-20 flex align-center pdx-20">
+            <!-- input information -->
+            <div class="input-content fl-1 mgr-half-1rem">
+              <input type="text" name="" class="full-width" value="Pain is the way to bring peace" readonly id="inp-content">
+            </div>
+            <!-- copy btn -->
+            <div class="copy-btn">
+              <button class="btn bg-none flex align-center" id="main-copy">
+                <ion-icon name="copy-outline" class="copy-icon" id="layer"></ion-icon>
+                <ion-icon name="checkmark-outline" class="copy-icon d-none" id="nice"></ion-icon>
+                <span class="pdl-10 p-small copy-span">Copier</span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- features -->
+        <div class="features pdb-15 pdt-20">
+          <div class="tit-feat mgb-half-1rem" style="padding: 0 17px;"><h6 class="fw-500 p-mid">Main Features</h6></div>
+          <ul class="pdx-20 ul-list">
+            <li class="flex align-center pdb-10">
+              <div class="check-icon flex align-center justify-center">
+                <ion-icon name="checkmark-outline"></ion-icon>
+              </div>
+              <div class="info-list mgl-half-1rem grey p-xsmall">Access basic company information and details</div>
+            </li>
+            <li class="flex align-center pdb-10">
+              <div class="check-icon flex align-center justify-center">
+                <ion-icon name="checkmark-outline"></ion-icon>
+              </div>
+              <div class="info-list mgl-half-1rem grey p-xsmall">Access and edit bug reports and create new issues</div>
+            </li>
+            <li class="flex align-center pdb-10">
+              <div class="check-icon flex align-center justify-center">
+                <ion-icon name="checkmark-outline"></ion-icon>
+              </div>
+              <div class="info-list mgl-half-1rem grey p-xsmall">Change issues status and assignee of issues</div>
+            </li>
+            <li class="flex align-center pdb-10">
+              <div class="check-icon flex align-center justify-center">
+                <ion-icon name="checkmark-outline"></ion-icon>
+              </div>
+              <div class="info-list mgl-half-1rem grey p-xsmall">Open and resolve intercom conversations</div>
+            </li>
+            <li class="flex align-center pdb-10">
+              <div class="check-icon flex align-center justify-center">
+                <ion-icon name="checkmark-outline"></ion-icon>
+              </div>
+              <div class="info-list mgl-half-1rem grey p-xsmall">Add or remove users and change user roles</div>
+            </li>
+          </ul>
+        </div>
+        <div class="some-info pdb-20" style="padding-left: 17px;padding-right: 17px;">
+          <p class="grey p-xxsmall">We care about your privacy in our <span class="fw-500 underline">Privacy Policy</span>. By clicking allow access you authorize Untitled to access your information.</p>
+        </div>
+       <!-- down buttons -->
+       <div class="btns-down sticky b-pos-initial index-2 white-bg flex align-center flex-between">
+          <div class="fst-side">
+            <button class="btn bg-none how flex align-center justify-center" id="how">
+              <ion-icon name="play-circle-outline" class="play"></ion-icon>
+              <span class="mgl-6 span how-it">How it works?</span>
+            </button>
+          </div>
+          <div class="scd-side">
+            <button class="btn bg-none annuler mgr-6" id="annuler"><span class="span">Cancel</span></button>
+            <button class="btn w-color allow" id="allow"><span class="span">Allow</span></button>
+          </div>
+       </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- share popup -->
+
+  <div class="share-pop">
+    <div class="parent-modal d-none" id="share-modal">
+      <div class="main-modal">
+        <!-- up modal -->
+        <div class="up-modal pdx-15 pdt-15 pdb-5 flex align-center flex-between">
+          <div class="left-part">
+            <h4 class="mgb-6">Share your project</h4>
+            <p class="grey p-xsmall pdr-20 para-share">you've created a new project! invite your team to review collaborate on this projects.</p>
+          </div>
+          <div class="right-part pdl-20">
+            <img src="imgs/mail-box.png" alt="">
+          </div>
+        </div>
+        <!-- embed input and copy -->
+        <div class="embed-copy pdx-15 pdt-5">
+          <label for="" class="p-xxsmall fw-500">Project link</label>
+          <div class="input-field-content relative full-width">
+            <input type="text" name="" id="" class="full-width" value="This world shall know pain" readonly>
+            <button class="embed btn flex align-center justify-center">
+              <ion-icon name="code-outline"></ion-icon>
+              <span class="embed-span">Embed</span>
+            </button>
+            <button class="copier btn flex align-center justify-center bg-none">
+              <ion-icon name="copy-outline"></ion-icon>
+              <span class="copier-span">Copy</span>
+            </button>
+          </div>
+        </div>
+        <!-- select normal and info -->
+        <div class="mid-modal flex flex-between align-center pdx-15">
+          <div class="left flex align-center">
+            <div class="link flex align-center justify-center">
+              <i class="fa fa-link"></i>
+            </div>
+            <div class="info-link pdl-10">
+              <h6 class="p-xsmall fw-500 flex align-center">Anyone with the link <ion-icon name="chevron-down-outline" class="pdl-5"></ion-icon></h6>
+              <p class="grey p-xxsmall">The project link is publicly viewable</p>
+            </div>
+          </div>
+          <div class="right">
+            <button class="btn flex align-center bg-none justify-center">
+              <span>view</span>
+              <ion-icon name="chevron-down-outline" class="pdl-5 mgt-4 drop-icon"></ion-icon>
+            </button>
+          </div>
+        </div>
+        <!-- search modal -->
+        <div class="search-modal pdx-15 pdb-20">
+          <label for="" class="p-xxsmall fw-500">Invite team members</label>
+          <div class="col-search flex">
+            <div class="inp-field fl-1 mgr-half-1rem relative">
+              <ion-icon name="search-outline" class="absolute s-icon"></ion-icon>
+              <input type="text" name="" id="" class="full-width" placeholder="Search">
+            </div>
+            <div class="send">
+              <button class="btn bleu-bg w-color">Send <span class="invite">invite</span></button>
+            </div>
+          </div>
+        </div>
+        <!-- users -->
+        <div class="main-users pdx-15 pdb-10">
+          <label for="" class="p-xxsmall fw-500">In this project</label>
+          <ul class="list-users mgt-half-1rem">
+            <li class="flex align-center flex-between pdb-15">
+              <!-- left side -->
+              <div class="gauche flex align-center">
+                <div class="img relative" style="background-image: url(imgs/Pain.png);">
+                  <div class="live flex align-center justify-center">
+                    <div class="point"></div>
+                  </div>
+                </div>
+                <div class="info-img pdl-10">
+                  <h6 class="p-small fw-500">Pain <span class="p-xxxsmall mgl-6 you">You</span></h6>
+                  <p class="p-xxsmall grey">@yahiko</p>
+                </div>
+              </div>
+              <!-- right side -->
+              <div class="droite">
+                <button class="btn flex align-center bg-none justify-center">
+                  <span>Owner</span>
+                  <ion-icon name="chevron-down-outline" class="pdl-5 mgt-4 drop-icon"></ion-icon>
+                </button>
+              </div>
+            </li>
+            <li class="flex align-center flex-between pdb-15">
+              <!-- left side -->
+              <div class="gauche flex align-center">
+                <div class="img relative" style="background-image: url(imgs/itachi.png);">
+                  <div class="live flex align-center justify-center">
+                    <div class="point"></div>
+                  </div>
+                </div>
+                <div class="info-img pdl-10">
+                  <h6 class="p-small fw-500">Itachi Uchiha</h6>
+                  <p class="p-xxsmall grey">@uchiha</p>
+                </div>
+              </div>
+              <!-- right side -->
+              <div class="droite">
+                <button class="btn flex align-center bg-none justify-center">
+                  <span>Admin</span>
+                  <ion-icon name="chevron-down-outline" class="pdl-5 mgt-4 drop-icon"></ion-icon>
+                </button>
+              </div>
+            </li>
+            <!-- kisame account no live-->
+            <li class="flex align-center flex-between pdb-15">
+              <!-- left side -->
+              <div class="gauche flex align-center">
+                <div class="img relative" style="background-image: url(imgs/Kisame.png);">
+                </div>
+                <div class="info-img pdl-10">
+                  <h6 class="p-small fw-500">Kisame Hoshigaki</h6>
+                  <p class="p-xxsmall grey">@itachi team</p>
+                </div>
+              </div>
+              <!-- right side -->
+              <div class="droite">
+                <button class="btn flex align-center bg-none justify-center">
+                  <span>Editor</span>
+                  <ion-icon name="chevron-down-outline" class="pdl-5 mgt-4 drop-icon"></ion-icon>
+                </button>
+              </div>
+            </li>
+            <!-- with live  and person-->
+            <li class="flex align-center flex-between pdb-15">
+              <!-- left side -->
+              <div class="gauche flex align-center">
+                <div class="img relative" style="background-image: url(imgs/Deidara_mugshot.png);">
+                  <div class="live flex align-center justify-center">
+                    <div class="point"></div>
+                  </div>
+                </div>
+                <div class="info-img pdl-10">
+                  <h6 class="p-small fw-500">Deidara</h6>
+                  <p class="p-xxsmall grey">@ftouchi aymen</p>
+                </div>
+              </div>
+              <!-- right side -->
+              <div class="droite">
+                <button class="btn flex align-center bg-none justify-center">
+                  <span>person</span>
+                  <ion-icon name="chevron-down-outline" class="pdl-5 mgt-4 drop-icon"></ion-icon>
+                </button>
+              </div>
+            </li>
+            <!-- no live person -->
+            <li class="flex align-center flex-between pdb-15">
+              <!-- left side -->
+              <div class="gauche flex align-center">
+                <div class="img relative" style="background-image: url(imgs/obito.png);">
+                </div>
+                <div class="info-img pdl-10">
+                  <h6 class="p-small fw-500">Obito Uchiha</h6>
+                  <p class="p-xxsmall grey">@uchiha</p>
+                </div>
+              </div>
+              <!-- right side -->
+              <div class="droite">
+                <button class="btn flex align-center bg-none justify-center">
+                  <span>Person</span>
+                  <ion-icon name="chevron-down-outline" class="pdl-5 mgt-4 drop-icon"></ion-icon>
+                </button>
+              </div>
+            </li>
+            <li class="flex align-center flex-between pdb-15">
+              <!-- left side -->
+              <div class="gauche flex align-center">
+                <div class="img relative" style="background-image: url(imgs/naruto.jpg);">
+                  <div class="live flex align-center justify-center">
+                    <div class="point"></div>
+                  </div>
+                </div>
+                <div class="info-img pdl-10">
+                  <h6 class="p-small fw-500">Naruto Uzumaki</h6>
+                  <p class="p-xxsmall grey">@hokage7</p>
+                </div>
+              </div>
+              <!-- right side -->
+              <div class="droite">
+                <button class="btn flex align-center bg-none justify-center">
+                  <span>Admin</span>
+                  <ion-icon name="chevron-down-outline" class="pdl-5 mgt-4 drop-icon"></ion-icon>
+                </button>
+              </div>
+            </li>
+            <li class="flex align-center flex-between pdb-15">
+              <!-- left side -->
+              <div class="gauche flex align-center">
+                <div class="img relative" style="background-image: url(imgs/Sasori.png);">
+                  <div class="live flex align-center justify-center">
+                    <div class="point"></div>
+                  </div>
+                </div>
+                <div class="info-img pdl-10">
+                  <h6 class="p-small fw-500">Sasori</h6>
+                  <p class="p-xxsmall grey">@ftouchi team</p>
+                </div>
+              </div>
+              <!-- right side -->
+              <div class="droite">
+                <button class="btn flex align-center bg-none justify-center">
+                  <span>person</span>
+                  <ion-icon name="chevron-down-outline" class="pdl-5 mgt-4 drop-icon"></ion-icon>
+                </button>
+              </div>
+            </li>
+            <li class="flex align-center flex-between pdb-15">
+              <!-- left side -->
+              <div class="gauche flex align-center">
+                <div class="img relative" style="background-image: url(imgs/tsunade.png);">
+                  <div class="live flex align-center justify-center">
+                    <div class="point"></div>
+                  </div>
+                </div>
+                <div class="info-img pdl-10">
+                  <h6 class="p-small fw-500">Tsunade</h6>
+                  <p class="p-xxsmall grey">@hokage5</p>
+                </div>
+              </div>
+              <!-- right side -->
+              <div class="droite">
+                <button class="btn flex align-center bg-none justify-center">
+                  <span>person</span>
+                  <ion-icon name="chevron-down-outline" class="pdl-5 mgt-4 drop-icon"></ion-icon>
+                </button>
+              </div>
+            </li>
+            <li class="flex align-center flex-between pdb-15">
+              <!-- left side -->
+              <div class="gauche flex align-center">
+                <div class="img relative" style="background-image: url(imgs/tobirama.png);">
+                </div>
+                <div class="info-img pdl-10">
+                  <h6 class="p-small fw-500">Tobirama</h6>
+                  <p class="p-xxsmall grey">@hokage2</p>
+                </div>
+              </div>
+              <!-- right side -->
+              <div class="droite">
+                <button class="btn flex align-center bg-none justify-center">
+                  <span>Person</span>
+                  <ion-icon name="chevron-down-outline" class="pdl-5 mgt-4 drop-icon"></ion-icon>
+                </button>
+              </div>
+            </li>
+            <li class="flex align-center flex-between pdb-15">
+              <!-- left side -->
+              <div class="gauche flex align-center">
+                <div class="img relative" style="background-image: url(imgs/kakashi.png);">
+                </div>
+                <div class="info-img pdl-10">
+                  <h6 class="p-small fw-500">Kakashi Hatake</h6>
+                  <p class="p-xxsmall grey">@hokage6</p>
+                </div>
+              </div>
+              <!-- right side -->
+              <div class="droite">
+                <button class="btn flex align-center bg-none justify-center">
+                  <span>Person</span>
+                  <ion-icon name="chevron-down-outline" class="pdl-5 mgt-4 drop-icon"></ion-icon>
+                </button>
+              </div>
+            </li>
+            <li class="flex align-center flex-between pdb-15">
+              <!-- left side -->
+              <div class="gauche flex align-center">
+                <div class="img relative" style="background-image: url(imgs/hashirama.png);">
+                  <div class="live flex align-center justify-center">
+                    <div class="point"></div>
+                  </div>
+                </div>
+                <div class="info-img pdl-10">
+                  <h6 class="p-small fw-500">Hashirama</h6>
+                  <p class="p-xxsmall grey">@fst-hokage</p>
+                </div>
+              </div>
+              <!-- right side -->
+              <div class="droite">
+                <button class="btn flex align-center bg-none justify-center">
+                  <span>Admin</span>
+                  <ion-icon name="chevron-down-outline" class="pdl-5 mgt-4 drop-icon"></ion-icon>
+                </button>
+              </div>
+            </li>
+            <li class="flex align-center flex-between pdb-15">
+              <!-- left side -->
+              <div class="gauche flex align-center">
+                <div class="img relative" style="background-image: url(imgs/zetsu.jpg);">
+                  <div class="live flex align-center justify-center">
+                    <div class="point"></div>
+                  </div>
+                </div>
+                <div class="info-img pdl-10">
+                  <h6 class="p-small fw-500">Zetsu</h6>
+                  <p class="p-xxsmall grey">@Akatsuki</p>
+                </div>
+              </div>
+              <!-- right side -->
+              <div class="droite">
+                <button class="btn flex align-center bg-none justify-center">
+                  <span>Person</span>
+                  <ion-icon name="chevron-down-outline" class="pdl-5 mgt-4 drop-icon"></ion-icon>
+                </button>
+              </div>
+            </li>
+            <li class="flex align-center flex-between pdb-15">
+              <!-- left side -->
+              <div class="gauche flex align-center">
+                <div class="img relative" style="background-image: url(imgs/Hidan.png);">
+                </div>
+                <div class="info-img pdl-10">
+                  <h6 class="p-small fw-500">Hidan</h6>
+                  <p class="p-xxsmall grey">@akatsuki</p>
+                </div>
+              </div>
+              <!-- right side -->
+              <div class="droite">
+                <button class="btn flex align-center bg-none justify-center">
+                  <span>Person</span>
+                  <ion-icon name="chevron-down-outline" class="pdl-5 mgt-4 drop-icon"></ion-icon>
+                </button>
+              </div>
+            </li>
+            <li class="flex align-center flex-between pdb-15">
+              <!-- left side -->
+              <div class="gauche flex align-center">
+                <div class="img relative" style="background-image: url(imgs/Kakuzu.png);">
+                </div>
+                <div class="info-img pdl-10">
+                  <h6 class="p-small fw-500">Kakuzu</h6>
+                  <p class="p-xxsmall grey">@akatsuki</p>
+                </div>
+              </div>
+              <!-- right side -->
+              <div class="droite">
+                <button class="btn flex align-center bg-none justify-center">
+                  <span>Person</span>
+                  <ion-icon name="chevron-down-outline" class="pdl-5 mgt-4 drop-icon"></ion-icon>
+                </button>
+              </div>
+            </li>
+            <li class="flex align-center flex-between pdb-15">
+              <!-- left side -->
+              <div class="gauche flex align-center">
+                <div class="img relative" style="background-image: url(imgs/Konan.png);">
+                  <div class="live flex align-center justify-center">
+                    <div class="point"></div>
+                  </div>
+                </div>
+                <div class="info-img pdl-10">
+                  <h6 class="p-small fw-500">konan</h6>
+                  <p class="p-xxsmall grey">@akatsuki</p>
+                </div>
+              </div>
+              <!-- right side -->
+              <div class="droite">
+                <button class="btn flex align-center bg-none justify-center">
+                  <span>person</span>
+                  <ion-icon name="chevron-down-outline" class="pdl-5 mgt-4 drop-icon"></ion-icon>
+                </button>
+              </div>
+            </li>
+            <li class="flex align-center flex-between pdb-15">
+              <!-- left side -->
+              <div class="gauche flex align-center">
+                <div class="img relative" style="background-image: url(imgs/madara.jpg);">
+                  <div class="live flex align-center justify-center">
+                    <div class="point"></div>
+                  </div>
+                </div>
+                <div class="info-img pdl-10">
+                  <h6 class="p-small fw-500">Madara Uchiha</h6>
+                  <p class="p-xxsmall grey">@Uchiha</p>
+                </div>
+              </div>
+              <!-- right side -->
+              <div class="droite">
+                <button class="btn flex align-center bg-none justify-center">
+                  <span>Admin</span>
+                  <ion-icon name="chevron-down-outline" class="pdl-5 mgt-4 drop-icon"></ion-icon>
+                </button>
+              </div>
+            </li>
+            <li class="flex align-center flex-between pdb-15">
+              <!-- left side -->
+              <div class="gauche flex align-center">
+                <div class="img relative" style="background-image: url(imgs/minato.png);">
+                  <div class="live flex align-center justify-center">
+                    <div class="point"></div>
+                  </div>
+                </div>
+                <div class="info-img pdl-10">
+                  <h6 class="p-small fw-500">Minato Namikaze</h6>
+                  <p class="p-xxsmall grey">@hokage4</p>
+                </div>
+              </div>
+              <!-- right side -->
+              <div class="droite">
+                <button class="btn flex align-center bg-none justify-center">
+                  <span>Admin</span>
+                  <ion-icon name="chevron-down-outline" class="pdl-5 mgt-4 drop-icon"></ion-icon>
+                </button>
+              </div>
+            </li>
+            <li class="flex align-center flex-between pdb-15">
+              <!-- left side -->
+              <div class="gauche flex align-center">
+                <div class="img relative" style="background-image: url(imgs/oro.jpg);">
+                  <div class="live flex align-center justify-center">
+                    <div class="point"></div>
+                  </div>
+                </div>
+                <div class="info-img pdl-10">
+                  <h6 class="p-small fw-500">Orochimaro</h6>
+                  <p class="p-xxsmall grey">@snake</p>
+                </div>
+              </div>
+              <!-- right side -->
+              <div class="droite">
+                <button class="btn flex align-center bg-none justify-center">
+                  <span>person</span>
+                  <ion-icon name="chevron-down-outline" class="pdl-5 mgt-4 drop-icon"></ion-icon>
+                </button>
+              </div>
+            </li>
+            <li class="flex align-center flex-between pdb-15">
+              <!-- left side -->
+              <div class="gauche flex align-center">
+                <div class="img relative" style="background-image: url(imgs/sasuke.jpg);">
+                </div>
+                <div class="info-img pdl-10">
+                  <h6 class="p-small fw-500">Sasuke Uchiha</h6>
+                  <p class="p-xxsmall grey">@Uchiha</p>
+                </div>
+              </div>
+              <!-- right side -->
+              <div class="droite">
+                <button class="btn flex align-center bg-none justify-center">
+                  <span>Editor</span>
+                  <ion-icon name="chevron-down-outline" class="pdl-5 mgt-4 drop-icon"></ion-icon>
+                </button>
+              </div>
+            </li>
+            <li class="flex align-center flex-between pdb-15">
+              <!-- left side -->
+              <div class="gauche flex align-center">
+                <div class="img relative" style="background-image: url(imgs/sarutobi.png);">
+                </div>
+                <div class="info-img pdl-10">
+                  <h6 class="p-small fw-500">Sarutobi</h6>
+                  <p class="p-xxsmall grey">@hokage3</p>
+                </div>
+              </div>
+              <!-- right side -->
+              <div class="droite">
+                <button class="btn flex align-center bg-none justify-center">
+                  <span>Person</span>
+                  <ion-icon name="chevron-down-outline" class="pdl-5 mgt-4 drop-icon"></ion-icon>
+                </button>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <!-- btns down -->
+        <div class="save-discard-btns sticky b-pos-initial white-bg pd-15 index-4">
+          <div class="list-ctrl flex">
+            <div class="discard fl-1 mgr-half-1rem">
+              <button class="btn black-bg rounded full-width bg-none" id="discard">Discard</button>
+            </div>
+            <div class="save-changes fl-1">
+              <button class="bleu-bg w-color btn rounded full-width fw-500" id="changes">Save</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body> 
+<script src="script.js"></script>
+</html>
+
+<!-- 
+
+<ion-icon name="arrow-redo"></ion-icon> => share
+<ion-icon name="layers"></ion-icon> => integrations
+<ion-icon name="swap-horizontal"></ion-icon> => connect
+<ion-icon name="person-add"></ion-icon> => login
+<ion-icon name="checkmark-circle"></ion-icon> => check circle
+<ion-icon name="code-outline"></ion-icon> => code
+ -->
+
+<!-- missed -->
+<!-- 
+
+   => image share
+   => icon code + link 
+   => akatsuki users
+
+ -->
+
